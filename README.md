@@ -5,7 +5,7 @@ The keypress logs are recorded in debugfs as long as the module is loaded. Only 
 
 You can, however, execute a script at shutdown or reboot (the procedure would be distro-specific) to save the keys to a file.
 
-keysniffer is intended to track your own devices and NOT to trespass on others. The author has never used it to compromise someone else's system and is not responsible for any unethical application.
+`keysniffer` is intended to track your own devices and NOT to trespass on others. The author has never used it to compromise someone else's system and is not responsible for any unethical application.
 
 keysniffer doesn't grab keys pressed if you use a SSH client, like PuTTY
 
@@ -62,7 +62,7 @@ To unload the module (and clear the logs), run:
 keysniffer is licensed under **GPLv2**.
 
 # Developers
-Copyright (C) 2015 [Arun Prakash Jana](mailto:engineerarun@gmail.com)
+Copyright (C) 2015 [Arun Prakash Jana](mailto:engineerarun@gmail.com) <br>
 French keyboard support by [matteyeux](https://twitter.com/matteyeux)
 
 # Links
