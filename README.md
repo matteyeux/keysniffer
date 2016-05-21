@@ -1,11 +1,13 @@
 # keysniffer
-A Linux kernel module to grab keys pressed in the keyboard, or a keylogger. Works with the US keyboard (and conforming laptops).
+A Linux kernel module to grab keys pressed in the keyboard, or a keylogger. Works with the French keyboard (and conforming laptops).
 
 The keypress logs are recorded in debugfs as long as the module is loaded. Only root or sudoers can read the log. The module name has been camouflaged to blend-in with other kernel modules.
 
 You can, however, execute a script at shutdown or reboot (the procedure would be distro-specific) to save the keys to a file.
 
-keysniffer is intended to track your own devices and NOT to trespass on others. The author has never usesd it to compromise someone else's system and is not responsible for any unethical application.
+keysniffer is intended to track your own devices and NOT to trespass on others. The author has never used it to compromise someone else's system and is not responsible for any unethical application.
+
+keysniffer doesn't grab keys pressed if you use a SSH client, like PuTTY
 
 If you find `keysniffer` useful, please consider donating via PayPal. [![Donate Button](https://img.shields.io/badge/paypal-donate-orange.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RMLTQ76JSXJ4Q)
 
@@ -14,7 +16,7 @@ If you find `keysniffer` useful, please consider donating via PayPal. [![Donate 
 - [Compilation](#compilation)
 - [Usage](#usage)
 - [License](#license)
-- [Developer](#developer)
+- [Developers](#developers)
 - [Links](#links)
 
 # Compilation
@@ -59,8 +61,9 @@ To unload the module (and clear the logs), run:
 # License
 keysniffer is licensed under **GPLv2**.
 
-# Developer
+# Developers
 Copyright (C) 2015 [Arun Prakash Jana](mailto:engineerarun@gmail.com)
+French keyboard support by [matteyeux](https://twitter.com/matteyeux)
 
 # Links
 http://www.gadgetweb.de/programming/39-how-to-building-your-own-kernel-space-keylogger.html
